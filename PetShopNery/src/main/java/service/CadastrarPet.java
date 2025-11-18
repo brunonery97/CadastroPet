@@ -4,7 +4,6 @@ import entities.Endereco;
 import entities.Pet;
 import enums.Sexo;
 import enums.Tipo;
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -40,7 +39,7 @@ public class CadastrarPet {
 
                 } else {
                     System.out.println(linha);
-                    System.out.println("R: ");
+                    System.out.print("R: ");
                     String resposta = sc.nextLine();
                     respostas.add(resposta);
                 }
@@ -64,9 +63,8 @@ public class CadastrarPet {
         double peso = Double.parseDouble(pesoStr.replace(",","."));
 
         Pet pet = new Pet(nomeSobrenome, tipoEnum, sexoEnum, endereco, idade, peso, raca);
-
+        ArquivoPet.salvarPetArquivoTXT(pet);
         System.out.println();
         System.out.println("****PET CADASTRADO*****");
-
     }
 }

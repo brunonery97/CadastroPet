@@ -1,7 +1,7 @@
 package org.example;
 
 import entities.Pet;
-
+import service.CadastrarPet;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -36,7 +36,7 @@ public class Main {
             switch (opcao){
                 case 1:
                     System.out.println("-----CADASTAR PET-----");
-                    // CHAMAR O SERVIÇO DE CADASTRAR PET
+                    CadastrarPet.cadastrarPet(sc);
                     break;
 
                 case 2:
