@@ -1,16 +1,13 @@
 package org.example;
 
-import entities.Pet;
+import service.BuscarPet;
 import service.CadastrarPet;
 import service.ListarPets;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        List<Pet> petList = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
         int opcao = 0;
 
@@ -55,7 +52,7 @@ public class Main {
 
                 case 5:
                     System.out.println("-----Lista Pets Por Critérios-----");
-                    //CHAMAR O SERVIÇO DE LISTAR POR CRITERIO
+                    BuscarPet.buscarPet(sc);
                     break;
 
                 case 6:

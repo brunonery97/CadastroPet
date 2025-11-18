@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 public class CadastrarPet {
 
-    public static void cadastrarPet(Scanner sc) {
+    public static Pet cadastrarPet(Scanner sc) {
 
         String formulario = "C:\\Users\\bruni\\OneDrive\\Documentos\\CursosProgramacaoAtual\\DesafioPetShop\\formulario.txt";
         List<String> respostas = new ArrayList<>();
@@ -47,7 +47,6 @@ public class CadastrarPet {
             }
         } catch (IOException e) {
             System.out.println("Erro ao leo o formulario" + e.getMessage());
-            return;
         }
 
         String nomeSobrenome = respostas.get(0);
@@ -66,5 +65,9 @@ public class CadastrarPet {
         ArquivoPet.salvarPetArquivoTXT(pet);
         System.out.println();
         System.out.println("****PET CADASTRADO*****");
+
+        return pet;
     }
+
+
 }
