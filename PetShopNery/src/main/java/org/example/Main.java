@@ -2,13 +2,13 @@ package org.example;
 
 import entities.Pet;
 import service.CadastrarPet;
+import service.ListarPets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
 
         List<Pet> petList = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
@@ -32,7 +32,6 @@ public class Main {
                 sc.nextLine();
             }
 
-
             switch (opcao){
                 case 1:
                     System.out.println("-----CADASTAR PET-----");
@@ -51,7 +50,7 @@ public class Main {
 
                 case 4:
                     System.out.println("-----Lista de Pets-----");
-                    //CHAMAR O SERVIÇO DE LISTAR TODOS OS PETS
+                    ListarPets.listaPet();
                     break;
 
                 case 5:
@@ -68,7 +67,6 @@ public class Main {
             }
             System.out.println();
         } while (opcao != 6);
-
 
         sc.close();
     }
