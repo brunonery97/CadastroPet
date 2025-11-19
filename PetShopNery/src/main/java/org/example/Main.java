@@ -2,6 +2,7 @@ package org.example;
 
 import service.BuscarPet;
 import service.CadastrarPet;
+import service.DeletarPet;
 import service.ListarPets;
 import java.util.Scanner;
 
@@ -42,7 +43,7 @@ public class Main {
 
                 case 3:
                     System.out.println("-----DELETAR PET-----");
-                    //CHAMAR O SERVIÇO DE DELETAR
+                    DeletarPet.deletarPet(sc);
                     break;
 
                 case 4:

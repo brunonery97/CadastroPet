@@ -91,7 +91,6 @@ public class BuscarPet {
 
             if (corresponde1 && corresponde2) resultados.add(p);
         }
-
         if (resultados.isEmpty()) {
             System.out.println("\nNenhum resultado encontrado.");
         } else {
@@ -101,7 +100,6 @@ public class BuscarPet {
                 System.out.println(formatoLinhaFinal(i++, r));
             }
         }
-
         return resultados;
     }
 
