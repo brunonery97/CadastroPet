@@ -1,9 +1,6 @@
 package org.example;
 
-import service.BuscarPet;
-import service.CadastrarPet;
-import service.DeletarPet;
-import service.ListarPets;
+import service.*;
 import java.util.Scanner;
 
 public class Main {
@@ -38,7 +35,7 @@ public class Main {
 
                 case 2:
                     System.out.println("-----ALTERAR DADOS DO PET-----");
-                    // CHAMAR O SERVIÇO DE ALTERAR O CADASTRO
+                    // alterar Pet
                     break;
 
                 case 3:
