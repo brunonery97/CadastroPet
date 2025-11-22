@@ -35,7 +35,7 @@ public class Main {
 
                 case 2:
                     System.out.println("-----ALTERAR DADOS DO PET-----");
-                    // alterar Pet
+                    AlterarDadosPet.alterarDadosPet(sc);
                     break;
 
                 case 3:
